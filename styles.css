@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.announcement-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.site-header {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.site-header-icons {
+    position: absolute;
+    right: 30;
+    top: 90;
+}
+
+.site-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.site-nav-list ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 32px;
+    
+}
+
+.site-nav-list ul li a {
+    color: #43474b;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.site-nav-list ul li a:hover {
+    text-decoration: underline;
+}
+
+.time-to-break h1 {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+    z-index: 2;
+    transform: translate(0%, -310%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    
+}
+
+.time-to-break img {
+    width: 100%;
+    opacity: 70%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.site-featured-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0; 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #43474b;
+}
+
+.site-featured-collection-shirts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.site-featured-collection-shirts #item #name {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-featured-collection-shirts #item #price {
+    color: #43474b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-featured-collection-shirts #item:hover {
+    opacity: 70%;
+}
+
+.slideshow {
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
+
+.slideshow-bar {
+    transform: translate(-20px,-40px);
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    opacity: 60%;
+    transition: opacity .5s;
+}
+
+.slideshow-bar:hover {
+    opacity: 80%;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 70%;
+    border-left: 10px solid white;
+    transform: translate(35px,-17.5px);
+    transition: opacity .5s;
+    cursor: pointer;
+  }
+
+  .arrow-right:hover {
+    opacity: 100%;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    opacity: 70%;
+    border-right:10px solid white; 
+    transform: translate(5px,2.75px);
+    transition: opacity .5s;
+    cursor: pointer;
+  }
+
+  .arrow-left:hover {
+    opacity: 100%;
+  }
+
+  .slide {
+    display: none;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+/* .site-header.logo--center {
+    padding-top: 10px;
+}
+
+.site-header-icons {
+    display: inline;
+    float: left;
+} */
+
+/* .picture-1 {
+   
+} */
